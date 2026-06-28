@@ -21,6 +21,8 @@ For each project, the assistant should help create and maintain:
 | `MUZE_CYCLE_LOG.md` | Analyze–Plan–Act–Evaluate notes per cycle. |
 | `MUZE_AI_USAGE.md` | Where AI is allowed, where human review is required, and where AI is unsafe. |
 
+Do not add a separate stakeholder document by default. When non-technical stakeholders need to follow the work, add a short stakeholder note to the cycle log or produce it in conversation from the existing Muze documents.
+
 ## Workflow overview
 
 The assistant should move from context to decision support in this order:
@@ -32,7 +34,8 @@ The assistant should move from context to decision support in this order:
 5. identify risks, especially complexity risk;
 6. review abstractions and boundaries;
 7. propose one next cycle;
-8. define evidence and stop conditions.
+8. define evidence and stop conditions;
+9. optionally translate the result into a stakeholder note.
 
 Avoid producing a long implementation backlog before this sequence is complete.
 
@@ -55,7 +58,7 @@ Outputs:
 - project brief;
 - first roadmap;
 - first risk register;
-- assumptions and open questions.
+- assumptions and open questions;
 - recommended next cycle, if enough is known.
 
 ### Step 2: Current-state audit
@@ -130,6 +133,32 @@ At the end of a cycle, the assistant helps evaluate:
 - whether new risks appeared;
 - whether the next cycle can proceed;
 - whether an evidence pause is needed.
+
+### Step 6: Stakeholder note
+
+Goal: help people outside the implementation work understand where the project is and where it is going.
+
+Use this step when the audience includes users, clients, funders, product owners, partners, or maintainers who do not need the full technical audit.
+
+The stakeholder note is not a new source of truth. It is derived from the project brief, roadmap, maturity notes, risk register, boundary map, abstraction review, and cycle log.
+
+Include:
+
+- audience;
+- current status in plain language;
+- current confidence;
+- next learning goal;
+- decisions made;
+- decisions deferred;
+- why the next cycle matters;
+- evidence that would change the plan.
+
+Avoid:
+
+- hiding uncertainty;
+- turning risks into marketing copy;
+- creating a second roadmap;
+- adding new commitments that are not in the Muze documents.
 
 ## Intake questions
 
@@ -264,6 +293,7 @@ Before calling the first pass useful, check:
 - [ ] Abstraction and boundary uncertainty is visible.
 - [ ] The recommended next cycle has explicit non-goals.
 - [ ] Evidence and pause conditions are defined before implementation.
+- [ ] If non-technical stakeholders are in the audience, a short stakeholder note is included or offered.
 
 If these are missing, revise the documents before planning work.
 

@@ -26,8 +26,9 @@ Produce:
 4. a risk register;
 5. a boundary map;
 6. an abstraction review;
-7. a recommendation for the first roadmap-driven spiral cycle.
-8. explicit evidence and pause conditions for that cycle.
+7. a recommendation for the first roadmap-driven spiral cycle;
+8. explicit evidence and pause conditions for that cycle;
+9. if the audience includes non-technical stakeholders, a short stakeholder note explaining where the project is and what the next learning goal is.
 
 Pay special attention to:
 
@@ -42,6 +43,8 @@ Pay special attention to:
 - missing evidence.
 
 Separate facts from assumptions. Mark uncertainty clearly.
+
+If you include a stakeholder note, derive it from the audit evidence. Do not create a second roadmap or hide uncertainty.
 
 Do not start by suggesting features. Start by identifying the most important risks and evidence needed.
 

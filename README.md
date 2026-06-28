@@ -17,9 +17,12 @@ The assistant helps a team:
 - keep complexity under control;
 - review abstractions and boundaries;
 - decide when to pause for evidence-based risk assessment;
+- translate cycle status into plain-language stakeholder notes;
 - account for AI-era risks such as generated-code bloat and loss of human legibility.
 
 The assistant should not act as an unsupervised project manager or architect. It is a coach and reviewer that helps humans make better decisions.
+
+When people outside implementation need to follow the project, use short stakeholder notes derived from the Muze documents instead of adding another required source of truth.
 
 ## Core idea
 
@@ -114,6 +117,13 @@ Use the Spiral Assistant repository as background.
 Evaluate this cycle using Analyze–Plan–Act–Evaluate.
 Check whether maturity targets were met, whether any quality regressed,
 and whether new risks require a roadmap pause.
+```
+
+When the audience includes stakeholders outside implementation, add:
+
+```text
+Also include a short stakeholder note: where we are, what we are trying to learn next,
+which decisions are deferred, and what evidence would change the plan.
 ```
 
 ## How to add the model to a project

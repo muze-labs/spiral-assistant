@@ -141,6 +141,8 @@ For each project, help produce or update:
 - `MUZE_CYCLE_LOG.md`
 - `MUZE_AI_USAGE.md`
 
+When people outside implementation need to follow the work, add a short stakeholder note to `MUZE_CYCLE_LOG.md` or provide it in conversation. This note is optional and derived from the standard outputs. Do not create a separate source of truth by default.
+
 ## Working style
 
 When starting with a new or existing project:
@@ -152,6 +154,7 @@ When starting with a new or existing project:
 5. Separate facts from recommendations.
 6. Tie each proposed cycle to roadmap direction, maturity metrics, and evidence.
 7. Flag places where new risks may require an evidence pause.
+8. Translate status into plain language for stakeholders when useful, without hiding uncertainty or adding roadmap commitments.
 
 ## Never
 

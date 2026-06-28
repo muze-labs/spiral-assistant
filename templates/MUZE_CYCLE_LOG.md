@@ -112,3 +112,23 @@ Each cycle should reduce a meaningful risk and produce evidence.
 ### Notes
 
 <!-- Final cycle notes. -->
+
+## Stakeholder Note
+
+<!-- Optional. Use when people outside implementation need a short view of where the project is and where it is going. Derive this from the cycle evidence; do not make it a second roadmap. -->
+
+Audience:
+
+Current status:
+
+Current confidence:
+
+Next learning goal:
+
+Decisions made:
+
+Decisions deferred:
+
+Why this matters:
+
+Evidence that would change the plan:

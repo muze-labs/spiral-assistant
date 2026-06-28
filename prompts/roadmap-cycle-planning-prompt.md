@@ -28,11 +28,14 @@ Produce a cycle plan with:
 8. evidence needed;
 9. accepted debt, if any;
 10. AI usage boundaries;
-11. conditions that would pause or alter the roadmap.
+11. conditions that would pause or alter the roadmap;
+12. optional stakeholder note if people outside implementation need to follow the cycle.
 
 Make sure the cycle is small enough to produce evidence.
 
 Prefer clarity over completeness. Do not harden poor abstractions.
+
+If you include a stakeholder note, explain the current status, next learning goal, deferred decisions, and evidence that would change the plan. Do not turn it into a second roadmap.
 
 End with a cycle decision checklist:
 

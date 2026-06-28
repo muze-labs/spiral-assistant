@@ -72,6 +72,7 @@ If the worktree is dirty, do not assume the current files represent the stable p
 5. Use the relevant prompt from `prompts/`.
 6. Draft the project-specific Muze documents.
 7. End with the proposed next cycle and the evidence it must produce.
+8. If non-technical stakeholders are part of the audience, add a short stakeholder note derived from the Muze documents.
 
 For most projects, start with:
 
@@ -97,6 +98,29 @@ Then create these when there is enough context:
 
 The boundary and abstraction documents can be rough at first. They are meant to expose uncertainty, not hide it.
 
+## Stakeholder Notes
+
+When clients, funders, product owners, partners, maintainers, or users need to follow the journey, produce a short stakeholder note instead of adding another required document.
+
+Put it in `MUZE_CYCLE_LOG.md` or generate it in conversation. It should summarize existing Muze evidence, not become a second roadmap.
+
+Use this shape:
+
+```md
+## Stakeholder Note
+
+Audience:
+Current status:
+Current confidence:
+Next learning goal:
+Decisions made:
+Decisions deferred:
+Why this matters:
+Evidence that would change the plan:
+```
+
+Keep it plain-language, honest about uncertainty, and short enough to read before a meeting.
+
 ## What A Good First Pass Contains
 
 A good first pass includes:
@@ -113,7 +137,8 @@ A good first pass includes:
 - one recommended next cycle;
 - explicit non-goals for that cycle;
 - evidence that would prove the cycle worked;
-- conditions that would pause or change the roadmap.
+- conditions that would pause or change the roadmap;
+- a stakeholder note when the audience includes people outside implementation.
 
 If the assistant produces a broad feature list without risk, maturity, evidence, or non-goals, the pass is not good enough.
 

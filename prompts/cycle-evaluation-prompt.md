@@ -27,6 +27,7 @@ Evaluate:
 8. Did AI introduce bloat, vocabulary drift, or review burden?
 9. Were new risks discovered?
 10. Should the roadmap continue, change, or pause for evidence?
+11. Is a stakeholder note needed to explain the result outside the implementation team?
 
 Update or draft:
 
@@ -34,6 +35,7 @@ Update or draft:
 - maturity score changes;
 - risk register changes;
 - abstraction review changes;
+- optional stakeholder note for MUZE_CYCLE_LOG.md;
 - recommended next cycle.
 
 Be explicit about uncertainty.

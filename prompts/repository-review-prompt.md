@@ -41,10 +41,13 @@ Produce:
 6. abstraction warning signs;
 7. maturity estimate;
 8. recommended first cycle;
-9. suggested project-specific Muze docs.
-10. facts, assumptions, and missing evidence.
+9. suggested project-specific Muze docs;
+10. facts, assumptions, and missing evidence;
+11. optional stakeholder note when the audience includes people outside implementation.
 
 Do not judge only by code quality. Judge whether the project can safely change direction without falling into complexity.
+
+If you include a stakeholder note, keep it plain-language and derive it from the review. It should not add commitments beyond the roadmap and cycle recommendation.
 
 If repository evidence conflicts with README or roadmap claims, treat that as a risk.
 ```
