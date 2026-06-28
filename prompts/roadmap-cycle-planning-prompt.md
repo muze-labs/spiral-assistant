@@ -33,4 +33,12 @@ Produce a cycle plan with:
 Make sure the cycle is small enough to produce evidence.
 
 Prefer clarity over completeness. Do not harden poor abstractions.
+
+End with a cycle decision checklist:
+
+- What question will this cycle answer?
+- What evidence will be accepted?
+- What complexity is being added?
+- What complexity should be removed or avoided?
+- What would cause a pause before the next cycle?
 ```

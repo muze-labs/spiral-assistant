@@ -58,6 +58,14 @@ Each cycle should validate a capability and reduce a risk.
 2. 
 3. 
 
+### Pause or change conditions
+
+<!-- What discovery would stop the next planned cycle or change the roadmap? -->
+
+1. 
+2. 
+3. 
+
 ## Later possibilities
 
 <!-- Ideas that may become roadmap items but should not drive current design yet. -->

@@ -11,10 +11,10 @@ An existing library has a README, source code, some tests, and several planned f
 ## Expected first assistant outputs
 
 - current-state audit;
-- risk register;
-- boundary map;
-- abstraction review;
-- maturity estimate;
+- `MUZE_RISK_REGISTER.md`;
+- `MUZE_BOUNDARY_MAP.md`;
+- `MUZE_ABSTRACTION_REVIEW.md`;
+- `MUZE_MATURITY.md`;
 - first roadmap-driven cycle.
 
 ## Example risks
@@ -40,3 +40,9 @@ Evidence:
 - comparison of dependent code length and clarity;
 - vocabulary review;
 - decision whether to keep, rename, split, or replace the abstraction.
+
+Pause conditions:
+
+- the alternative prototype is simpler in common cases;
+- dependent code needs repeated adapters;
+- the current abstraction cannot be explained without implementation details.

@@ -12,6 +12,24 @@
 
 > <!-- A testable statement of what this project should make possible. -->
 
+## Facts and assumptions
+
+### Facts
+
+<!-- Things directly supported by project context, code, user feedback, or documents. -->
+
+1. 
+2. 
+3. 
+
+### Assumptions
+
+<!-- Things believed for now but not yet proven. -->
+
+| Assumption | Why we believe it | What could disprove it |
+|---|---|---|
+| | | |
+
 ## Intended users
 
 <!-- Who is this for? Include technical level if relevant. -->
@@ -44,12 +62,6 @@
 ## Current roadmap pressure
 
 <!-- What changed recently? Client pressure, user feedback, technical discovery, market change, AI shift, etc. -->
-
-## Key assumptions
-
-| Assumption | Why we believe it | What could disprove it |
-|---|---|---|
-| | | |
 
 ## Main open questions
 

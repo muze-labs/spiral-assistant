@@ -33,9 +33,9 @@ Use this section during evaluation.
 
 If a risk is unclear and important, pause the normal roadmap and run an evidence-based assessment.
 
-| Risk | Evidence activity | Output | Decision |
-|---|---|---|---|
-| | Research / prototype / benchmark / spike / review | | |
+| Risk | Trigger | Evidence activity | Output | Decision |
+|---|---|---|---|---|
+| | | Research / prototype / benchmark / spike / review | | |
 
 ## Accepted debt
 

@@ -31,6 +31,9 @@ Produce:
 6. maturity estimate;
 7. recommended first cycle;
 8. suggested project-specific Muze docs.
+9. facts, assumptions, and missing evidence.
 
 Do not judge only by code quality. Judge whether the project can safely change direction without falling into complexity.
+
+If repository evidence conflicts with README or roadmap claims, treat that as a risk.
 ```

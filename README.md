@@ -47,6 +47,7 @@ spiral-assistant/
   README.md
   AGENTS.md
   docs/
+    00-quickstart.md
     01-model-overview.md
     02-practical-complexity-guide.md
     03-ai-era-update-unvalidated.md
@@ -80,6 +81,8 @@ spiral-assistant/
 ## How to use this repository in a chat
 
 Start a new chat and point the assistant to this repository, or upload a zip of it. Then add the project you want to analyze.
+
+Ask the assistant to read `AGENTS.md` and `docs/00-quickstart.md` first. The first useful result should be a bounded project pass: drafts of the core Muze documents, a proposed next cycle, and the evidence needed to decide whether the roadmap should continue.
 
 For a new project:
 
@@ -128,6 +131,15 @@ docs/muze/
 ```
 
 Copy the files from `templates/` and fill them in with the assistant.
+
+Start with only:
+
+- `MUZE_PROJECT_BRIEF.md`
+- `MUZE_ROADMAP.md`
+- `MUZE_MATURITY.md`
+- `MUZE_RISK_REGISTER.md`
+
+Add the other documents once the assistant has enough project context to say something useful.
 
 ## Status
 

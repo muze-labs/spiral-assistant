@@ -54,6 +54,7 @@ Core question:
 #### Decision
 
 - [ ] Keep provisional
+- [ ] Do not harden yet
 - [ ] Test through prototype
 - [ ] Rename
 - [ ] Split
@@ -83,3 +84,5 @@ Before building schemas, storage, APIs, or infrastructure around an abstraction:
 - [ ] Dependent code is simpler than alternatives.
 - [ ] Boundaries are clear.
 - [ ] The team can explain why this is the right center.
+
+If any box is unchecked, document the missing evidence and prefer a smaller prototype, comparison, or simplification pass before hardening.

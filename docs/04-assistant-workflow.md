@@ -23,6 +23,18 @@ For each project, the assistant should help create and maintain:
 
 ## Workflow overview
 
+The assistant should move from context to decision support in this order:
+
+1. establish project direction;
+2. identify roadmap pressure;
+3. estimate maturity with evidence;
+4. identify risks, especially complexity risk;
+5. review abstractions and boundaries;
+6. propose one next cycle;
+7. define evidence and stop conditions.
+
+Avoid producing a long implementation backlog before this sequence is complete.
+
 ### Step 1: Project intake
 
 Goal: understand the project well enough to draft the first project documents.
@@ -42,6 +54,7 @@ Outputs:
 - first roadmap;
 - first risk register;
 - assumptions and open questions.
+- recommended next cycle, if enough is known.
 
 ### Step 2: Current-state audit
 
@@ -83,6 +96,9 @@ For each cycle, define:
 - evidence needed;
 - debt accepted;
 - AI usage boundaries.
+- conditions that would pause or alter the roadmap.
+
+The assistant should prefer one well-scoped cycle over several speculative cycles. Later cycles can be sketched, but they should not drive current design.
 
 ### Step 4: Cycle support
 
@@ -167,6 +183,8 @@ Example score scale:
 
 Scores should include evidence and uncertainty.
 
+Scores are not progress by themselves. A higher score is meaningful only when the evidence is understandable and relevant to the roadmap capability being validated.
+
 Bad:
 
 > Security is 4.
@@ -193,6 +211,24 @@ Evidence can include:
 - security review;
 - working demo;
 - code deletion.
+
+Evidence should be chosen for the risk being reduced. A visual prototype may be strong evidence for interaction risk and weak evidence for data integrity. A test suite may be strong evidence for regression risk and weak evidence for product direction.
+
+## First-Pass Acceptance Check
+
+Before calling the first pass useful, check:
+
+- [ ] Project direction is stated as a testable hypothesis.
+- [ ] Roadmap pressure is explicit.
+- [ ] Facts and assumptions are separated.
+- [ ] The maturity metric set is small enough to use.
+- [ ] Scores include evidence and uncertainty.
+- [ ] Complexity risk is named.
+- [ ] Abstraction and boundary uncertainty is visible.
+- [ ] The recommended next cycle has explicit non-goals.
+- [ ] Evidence and pause conditions are defined before implementation.
+
+If these are missing, revise the documents before planning work.
 
 ## Assistant maturity levels
 

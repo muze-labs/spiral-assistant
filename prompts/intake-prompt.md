@@ -16,6 +16,13 @@ Produce drafts for:
 - MUZE_RISK_REGISTER.md
 - MUZE_MATURITY.md
 
+Also produce:
+
+- a facts/assumptions section;
+- the smallest useful next cycle;
+- evidence needed for that cycle;
+- conditions that would pause or alter the roadmap.
+
 Focus especially on:
 
 - project direction;
@@ -29,4 +36,6 @@ Focus especially on:
 - evidence needed for the first cycle.
 
 Do not propose a large implementation plan yet. First help us define what risk the next cycle should reduce.
+
+If the project direction is unclear, draft a provisional direction and mark it as an assumption instead of blocking.
 ```
