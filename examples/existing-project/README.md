@@ -10,6 +10,8 @@ An existing library has a README, source code, some tests, and several planned f
 
 ## Expected first assistant outputs
 
+- audit scope, including branch/worktree state;
+- dependency scope decision for related repositories;
 - current-state audit;
 - `MUZE_RISK_REGISTER.md`;
 - `MUZE_BOUNDARY_MAP.md`;
@@ -20,6 +22,8 @@ An existing library has a README, source code, some tests, and several planned f
 ## Example risks
 
 - roadmap has changed but docs still describe the old direction;
+- the reviewed branch contains experimental changes that are mistaken for stable direction;
+- important internal dependencies are treated as stable black boxes without a conscious decision;
 - package boundaries follow file history rather than concepts;
 - examples require too much setup;
 - a common abstraction causes special cases;

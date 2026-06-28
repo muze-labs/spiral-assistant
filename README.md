@@ -103,6 +103,8 @@ Use the Spiral Assistant repository as background.
 Review this repository and help us adopt Muze's spiral model.
 Start with a current-state audit, identify complexity and abstraction risks,
 then propose the first roadmap-driven spiral cycle.
+Record the branch, worktree state, and which related repositories or internal
+dependencies are in scope before judging maturity.
 ```
 
 For an end-of-cycle evaluation:

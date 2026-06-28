@@ -30,13 +30,38 @@ For a new project, provide as many of these as possible:
 For an existing project, provide:
 
 - repository access or a source snapshot;
+- intended branch, tag, or commit;
 - README and roadmap;
 - current issues or client feedback;
 - test and build status if known;
 - any existing architecture notes;
+- related repositories or important internal dependencies;
 - known AI-generated or AI-assisted work.
 
 Missing information is allowed. The assistant should draft with assumptions rather than block on perfect input.
+
+## Existing-Repository Audit Scope
+
+Before reviewing an existing repository, record the audit scope:
+
+- repository path or URL;
+- branch, tag, or commit;
+- whether the worktree is clean;
+- whether untracked or experimental files are included;
+- which related repositories or internal dependencies are in scope;
+- which dependencies are intentionally treated as black boxes.
+
+Ask the user before pulling related repositories into the review. Many projects depend on internal libraries that carry their own roadmap, maturity, risks, and abstractions. Including them can improve evidence, but it also increases review cost and can blur the current cycle.
+
+Use three scope levels:
+
+| Scope | Meaning |
+|---|---|
+| Primary repository | Always inspect. This is the project being reviewed. |
+| In-scope related repository | Inspect because it affects the current roadmap, abstraction, or risk. |
+| Out-of-scope dependency | Treat as an external assumption. Record the risk if that assumption matters. |
+
+If the worktree is dirty, do not assume the current files represent the stable project state. Ask whether to review the dirty state, a clean branch, or both.
 
 ## First-Run Sequence
 
@@ -77,6 +102,7 @@ The boundary and abstraction documents can be rough at first. They are meant to 
 A good first pass includes:
 
 - a short project hypothesis;
+- audit scope, branch, and worktree state for existing repositories;
 - facts separated from assumptions;
 - the current roadmap direction;
 - the main roadmap pressures;

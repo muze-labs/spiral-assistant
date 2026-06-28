@@ -25,13 +25,14 @@ For each project, the assistant should help create and maintain:
 
 The assistant should move from context to decision support in this order:
 
-1. establish project direction;
-2. identify roadmap pressure;
-3. estimate maturity with evidence;
-4. identify risks, especially complexity risk;
-5. review abstractions and boundaries;
-6. propose one next cycle;
-7. define evidence and stop conditions.
+1. establish audit scope;
+2. establish project direction;
+3. identify roadmap pressure;
+4. estimate maturity with evidence;
+5. identify risks, especially complexity risk;
+6. review abstractions and boundaries;
+7. propose one next cycle;
+8. define evidence and stop conditions.
 
 Avoid producing a long implementation backlog before this sequence is complete.
 
@@ -46,7 +47,8 @@ Inputs:
 - project description;
 - client or user feedback;
 - repository files, if available;
-- existing architecture notes.
+- existing architecture notes;
+- related repositories or internal dependencies, if relevant.
 
 Outputs:
 
@@ -62,6 +64,7 @@ Goal: identify the current maturity level and the main risks.
 
 The assistant should inspect:
 
+- branch, tag, commit, and worktree state;
 - source tree;
 - dependencies;
 - tests;
@@ -70,10 +73,12 @@ The assistant should inspect:
 - open issues;
 - current roadmap;
 - examples;
+- related repositories selected by the user;
 - generated or AI-assisted code, if known.
 
 Outputs:
 
+- audit scope and excluded dependencies;
 - current maturity estimate;
 - complexity risks;
 - abstraction risks;
@@ -95,7 +100,7 @@ For each cycle, define:
 - explicit non-goals;
 - evidence needed;
 - debt accepted;
-- AI usage boundaries.
+- AI usage boundaries;
 - conditions that would pause or alter the roadmap.
 
 The assistant should prefer one well-scoped cycle over several speculative cycles. Later cycles can be sketched, but they should not drive current design.
@@ -144,6 +149,36 @@ Useful questions:
 10. Has AI generated code or architecture?
 11. What does success look like in the next cycle?
 12. What is explicitly out of scope?
+13. Which branch, tag, or commit should be treated as the baseline?
+14. Should dirty worktree changes be included?
+15. Which related repositories or internal dependencies should be inspected?
+
+## Dependency Scope
+
+Dependencies can be part of the project evidence or part of the project assumptions.
+
+For each important dependency, decide:
+
+- inspect now;
+- inspect only if a risk points there;
+- treat as a black box for this cycle.
+
+Prefer inspecting related repositories when:
+
+- the dependency is made by the same organization;
+- the current roadmap depends on changing the dependency;
+- the dependency defines core vocabulary or abstractions;
+- the dependency is security-sensitive;
+- the dependency's maturity is unknown and could block the next cycle.
+
+Prefer treating a dependency as out of scope when:
+
+- its API is stable enough for the current cycle;
+- reviewing it would expand the cycle without reducing the main risk;
+- the dependency can be replaced behind a clear boundary;
+- the current question can be answered using only the primary repository.
+
+Record excluded dependencies as assumptions in the risk register or boundary map when their behavior matters.
 
 ## Roadmap-first planning
 
@@ -218,6 +253,8 @@ Evidence should be chosen for the risk being reduced. A visual prototype may be 
 
 Before calling the first pass useful, check:
 
+- [ ] Audit scope, branch, and worktree state are recorded.
+- [ ] Related repositories and internal dependencies are marked in scope or out of scope.
 - [ ] Project direction is stated as a testable hypothesis.
 - [ ] Roadmap pressure is explicit.
 - [ ] Facts and assumptions are separated.

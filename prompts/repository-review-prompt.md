@@ -7,6 +7,15 @@ Use the Spiral Assistant repository as background.
 
 Review this repository from the perspective of Muze's frontend-first, maturity-gated spiral model.
 
+Start by recording:
+
+- repository path or URL;
+- branch, tag, or commit;
+- worktree cleanliness;
+- whether dirty or untracked files are included;
+- related repositories or internal dependencies;
+- which related repositories are in scope, deferred, or out of scope.
+
 Focus on:
 
 - project purpose and roadmap clarity;
@@ -15,6 +24,7 @@ Focus on:
 - conceptual and technical boundaries;
 - package/module structure;
 - dependency replaceability;
+- dependency review scope;
 - thin application layer;
 - tests and evidence quality;
 - documentation clarity;
@@ -23,15 +33,16 @@ Focus on:
 
 Produce:
 
-1. concise overview;
-2. key strengths;
-3. key risks;
-4. boundary map;
-5. abstraction warning signs;
-6. maturity estimate;
-7. recommended first cycle;
-8. suggested project-specific Muze docs.
-9. facts, assumptions, and missing evidence.
+1. audit scope;
+2. concise overview;
+3. key strengths;
+4. key risks;
+5. boundary map;
+6. abstraction warning signs;
+7. maturity estimate;
+8. recommended first cycle;
+9. suggested project-specific Muze docs.
+10. facts, assumptions, and missing evidence.
 
 Do not judge only by code quality. Judge whether the project can safely change direction without falling into complexity.
 

@@ -25,9 +25,15 @@ Core question:
 
 ## Dependency boundaries
 
-| Dependency | Used for | Wrapped by | Replaceability risk | Notes |
+| Dependency | Used for | Scope | Wrapped by | Replaceability risk | Notes |
+|---|---|---|---|---|---|
+| | | In scope / Deferred / Out of scope | | | |
+
+## Related repositories
+
+| Repository | Relationship | Review scope | Reason | Risk if excluded |
 |---|---|---|---|---|
-| | | | | |
+| | Internal dependency / sibling project / tool / example | In scope / Deferred / Out of scope | | |
 
 ## Thin application layer check
 
